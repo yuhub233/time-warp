@@ -1,0 +1,23 @@
+{
+  "port": 3100,
+  "webPort": 8100,
+  "initialWakeTime": "12:00",
+  "initialSleepTime": "05:00",
+  "convergenceRate": 0.3,
+  "encryption": {
+    "fixedSalt": "time-warp-2024-secret"
+  },
+  "ai": {
+    "provider": "openai",
+    "baseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "model": "gpt-4o-mini",
+    "claudeBaseUrl": "https://api.anthropic.com/v1",
+    "claudeApiKey": "",
+    "claudeModel": "claude-3-5-sonnet-20241022"
+  },
+  "serverAddresses": {
+    "lan": "auto",
+    "wan": ""
+  }
+}
