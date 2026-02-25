@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Warp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="nav">
+      <div class="nav-brand">Time Warp</div>
+      <div class="nav-links">
+        <a href="#" data-page="home" class="active">首页</a>
+        <a href="#" data-page="pomodoro">番茄钟</a>
+        <a href="#" data-page="fullclock">大时钟</a>
+        <a href="#" data-page="history">历史</a>
+        <a href="#" data-page="summary">AI总结</a>
+        <a href="#" data-page="settings">设置</a>
+      </div>
+    </nav>
+
+    <div id="entertainment-warning" class="warning-bar hidden">
+      ⚠️ 娱乐时间即将/已经达标！请注意控制！
+    </div>
+
+    <main id="main">
+      <section id="page-home" class="page active"></section>
+      <section id="page-pomodoro" class="page"></section>
+      <section id="page-fullclock" class="page"></section>
+      <section id="page-history" class="page"></section>
+      <section id="page-summary" class="page"></section>
+      <section id="page-settings" class="page"></section>
+    </main>
+  </div>
+
+  <div id="fullscreen-overlay" class="hidden">
+    <div id="fullscreen-time"></div>
+    <div id="fullscreen-info"></div>
+    <button id="fullscreen-exit" onclick="exitFullscreen()">退出</button>
+  </div>
+
+  <script src="js/crypto.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
